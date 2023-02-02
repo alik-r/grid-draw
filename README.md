@@ -1,2 +1,2 @@
-# grid-draw
-A Vanilla Javascript project that allows you to draw on a grid of divs
+# GridDraw
+GridDraw is a simple Vanilla Javascript project that allows you to draw on a rectangular grid of divs. It is inspired by the classic Etch-a-Sketch toy. The project is built with HTML, CSS, and JavaScript and is easy to use, modify and customize.
