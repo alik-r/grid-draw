@@ -39,5 +39,20 @@ function resizeGrid() {
 const btnResize = document.querySelector('.resize');
 btnResize.addEventListener('click', resizeGrid);
 
+// Clearing
+const initColor = 'whitesmoke';
+
+function clearGrid() {
+    if(grid.innerHTML !== "") {
+      const squares = document.querySelectorAll('.grid-square');
+      for(const square of squares) {
+        square.style.backgroundColor = initColor;
+      }
+    }
+}
+
+const btnClear = document.querySelector('.clear');
+btnClear.addEventListener('click', clearGrid);
+
 generateGrid(gridSize);
 
