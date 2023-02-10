@@ -22,5 +22,22 @@ function generateGrid(size) {
     }    
 }
 
+// Resizing
+function resizeGrid() {
+  const newSize = Number(
+      prompt("Enter number of squares per side (max. 40):")
+    );
+    if (newSize && newSize <= 40) {
+      gridSize = newSize;
+      grid.innerHTML = "";
+      generateGrid(gridSize);
+    } else {
+      console.log('Grid sizes larger than 40 not supported.')
+    }
+}
+
+const btnResize = document.querySelector('.resize');
+btnResize.addEventListener('click', resizeGrid);
+
 generateGrid(gridSize);
 
